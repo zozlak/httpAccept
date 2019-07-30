@@ -12,3 +12,6 @@ before_script:
 after_success:
   - php vendor/bin/php-coveralls -v
 
+cache:
+  directories:
+    - vendor
