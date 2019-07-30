@@ -1,0 +1,15 @@
+language: php
+php:
+  - 7.1
+  - 7.2
+  - 7.3
+
+install:
+  - composer require php-coveralls/php-coveralls
+
+before_script:
+  - mkdir -p build/logs
+
+after_success:
+  - php vendor/bin/php-coveralls -v
+
