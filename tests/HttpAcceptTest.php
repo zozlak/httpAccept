@@ -73,7 +73,6 @@ class HttpAcceptTest extends \PHPUnit\Framework\TestCase {
 
     public function testBestMatchExact() {
         $_SERVER['HTTP_ACCEPT'] = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8';
-        HttpAccept::parse();
         $best                   = HttpAccept::getBestMatch(['application/json', 'application/xml']);
         $this->assertEquals('application/xml;q=0.9', (string) $best);
     }
