@@ -1,9 +1,9 @@
-# HttpAccept
-
 [![Latest Stable Version](https://poser.pugx.org/zozlak/http-accept/v/stable)](https://packagist.org/packages/zozlak/http-accept)
 [![Build Status](https://travis-ci.org/zozlak/httpAccept.svg?branch=master)](https://travis-ci.org/zozlak/httpAccept)
 [![Coverage Status](https://coveralls.io/repos/github/zozlak/httpAccept/badge.svg?branch=master)](https://coveralls.io/github/zozlak/httpAccept?branch=master)
 [![License](https://poser.pugx.org/zozlak/http-accept/license)](https://packagist.org/packages/zozlak/http-accept)
+
+# HttpAccept
 
 A static class making it easier to deal with the HTTP Accept header.
 
