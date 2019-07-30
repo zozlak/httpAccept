@@ -1,0 +1,23 @@
+{
+    "name": "zozlak/http-accept",
+    "type": "library",
+    "description": "Set of methods to deal with the HTTP Accept header",
+    "keywords": [],
+    "homepage": "https://github.com/zozlak/httpAccept",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateusz Żółtak",
+            "email": "zozlak@zozlak.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "zozlak\\": "src/zozlak"
+        }
+    }
+}
