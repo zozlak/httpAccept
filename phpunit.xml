@@ -1,13 +1,17 @@
-<phpunit colors="true" verbose="true" bootstrap="vendor/autoload.php">
-	<logging>
-		<log type="coverage-clover" target="build/logs/clover.xml"/>
-	</logging>
-	<testsuite name="tests">
-		<directory>tests</directory>
-	</testsuite>
-	<filter>
-		<whitelist processUncoveredFilesFromWhitelist="true">
-			<directory suffix=".php">src</directory>
-		</whitelist>
-	</filter>
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" colors="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd" cacheDirectory=".phpunit.cache" displayDetailsOnTestsThatTriggerDeprecations="true">
+  <coverage>
+    <report>
+      <clover outputFile="build/logs/clover.xml"/>
+    </report>
+  </coverage>
+  <logging/>
+  <testsuite name="tests">
+    <directory>tests</directory>
+  </testsuite>
+  <source>
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+  </source>
 </phpunit>
